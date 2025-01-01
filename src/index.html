@@ -9,7 +9,7 @@
 <body>
     
     
-    <header class="bg-[#FFFFFF] w-full h-[72px]">
+    <header class="bg-slate-200 w-full h-[72px]">
         <div class="container mx-auto">
             <div class="flex justify-between items-center">
                 <!-- Left: HireGo Logo -->
@@ -60,13 +60,16 @@
                         
                             <!-- Right-side buttons will be hidden in the menu -->
                             <div id="right-side-buttons" class="inline-block space-x-2 ">
-                                <button class="inline-flex items-center border rounded-3xl py-[5px] px-4">
+                                <button class="inline-flex items-center border border-gray-400 rounded-3xl py-[5px] px-4">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-2">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"></path>
                                     </svg>
                                     English
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-4 ml-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                                    </svg>
                                 </button>
-                                <button class="border rounded-3xl py-[5px] px-4">Login</button>
+                                <button class="border border-gray-400 rounded-3xl py-[5px] px-4">Login</button>
                                 <button class="border rounded-3xl py-[5px] px-4 bg-black text-white">Request a Demo</button>
                             </div>
                     </div>
@@ -78,10 +81,10 @@
     <main>
 
         <section>
-            <div class="bg-[#B1D8FC] w-auto h-[495px] rounded-bl-[50px] rounded-bl-[50px] rounded-br-[50px]">
-                <div class="relative flex justify-between">
-                    <div class="absolute w-[608px] h-[352px] top-[138px] left-[80px]">
-                            <h1 class="font-[IBM Plex Sans Hebrew] text-[48px] font-semibold leading-[50px] tracking-[-0.03em] text-left decoration-none decoration-from-font">
+            <div class="bg-[#B1D8FC] w-auto h-auto rounded-bl-[50px] rounded-bl-[50px] rounded-br-[50px]">
+                <div class="grid sm:grid-cols-1 lg:grid-cols-2">
+                    <div class="px-[50px] mt-20 w-full h-[352px]">
+                        <h1 class="font-[IBM Plex Sans Hebrew] text-[48px] font-semibold leading-[50px] tracking-[-0.03em] text-left decoration-none decoration-from-font">
                             HireGo is your
                         </h1>
                         <h1 class="font-[IBM Plex Sans Hebrew] text-[48px] font-semibold leading-[50px] tracking-[-0.03em] text-left decoration-none decoration-from-font">
@@ -91,7 +94,7 @@
                             Global People Platform
                         </h1>
                     
-                        <ul class="absolute top-[165px] space-y-1">
+                        <ul class="space-y-1 mt-6">
                             <li class="text-sm md:text-base">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline mr-1 md:mr-2 size-4 md:size-6 stroke-[#FFEA79]">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path>
@@ -106,7 +109,7 @@
                             </li>
                         </ul>
                         
-                        <button class="inline-flex items-center bg-black text-white rounded-3xl absolute top-[240px] px-[12px] py-[8px]">
+                        <button class="inline-flex items-center bg-black text-white rounded-3xl mt-6 px-[12px] py-[8px]">
                             Request a demo
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
@@ -114,8 +117,254 @@
                         </button>
                         
                     </div>
-                    <div class="absolute w-[841px] h-[671px] top-[128px] left-[728px]">
+                    <div class="w-full lg:mt-20 mb-8">
                         <img src="./hero_img-removebg-preview.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mx-auto">
+                <div class="mt-9 flex items-center justify-center ">
+                    <h1 class="text-center text-slate-400 font-semibold text-[35px] h-full w-[600px]">
+                        Trusted by <span class="text-black">25,000+</span> companies from
+                        startups to enterprise
+                    </h1>
+                </div> 
+                <div class="my-10">
+                    <div class="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-7 gap-8 items-center justify-center ml-6">
+                        <img src="https://hiregotemplate.netlify.app/assets/images/shopify.png" alt="shopify Logo">
+                        <img src="https://hiregotemplate.netlify.app/assets/images/klarna.png" alt="klarna Logo">
+                        <img src="https://hiregotemplate.netlify.app/assets/images/reddit.png" alt="reddit Logo">
+                        <img src="https://hiregotemplate.netlify.app/assets/images/nike.png" alt="nike Logo">
+                        <img src="https://hiregotemplate.netlify.app/assets/images/zapier.png" alt="zapier Logo">
+                        <img src="https://hiregotemplate.netlify.app/assets/images/nu.png" alt="nu Logo">
+                        <img src="https://hiregotemplate.netlify.app/assets/images/felly_belly.png" alt="felly_belly Logo">
+                        <img src="https://hiregotemplate.netlify.app/assets/images/revolut.png" alt="revolut Logo">
+                        <img src="https://hiregotemplate.netlify.app/assets/images/forever_21.png" alt="forever_21 Logo">
+                        <img class="hidden sm:block" src="https://hiregotemplate.netlify.app/assets/images/redbull.png" alt="redbull Logo">
+                        <img class="hidden sm:block" src="https://hiregotemplate.netlify.app/assets/images/clavin_klein.png" alt="clavin_klein Logo">
+                        <img class="hidden sm:block" src="https://hiregotemplate.netlify.app/assets/images/intercom.png" alt="intercom Logo">
+                        <img class="hidden sm:block" src="https://hiregotemplate.netlify.app/assets/images/hermes.png" alt="hermes Logo">
+                        <img class="hidden sm:block" src="https://hiregotemplate.netlify.app/assets/images/hello_fresh.png" alt="hello_fresh Logo">
+                    </div>
+                </div>                                
+            </div>     
+        </section>
+
+        <section>
+            <div class="bg-[#323232] w-full h-auto sm:h-auto rounded-[50px] mt-12">
+                <div class="container mx-auto text-white"></div>
+                    <div class="flex items-center justify-center ">
+                        <h1 class="mt-[40px] text-center text-white font-semibold text-[35px] h-full w-[280px]">
+                            You can do it all
+                            With HireGO
+                        </h1>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-[30px] mt-[40px] px-[50px]">
+                        <div class="w-full h-auto overflow-auto bg-[#FFFFFF1A] rounded-[50px]">
+                            <div class="p-8">
+                                <h1 class="text-[25px] font-semibold text-white">Hire international talent</h1>
+                                <p class="mt-7 text-gray-300">Instead of setting up your own entities, experience the speed of HireGO's automated global hiring. Create compliant employment agreements and set up payroll and benefits—in a matter of clicks.</p>
+                                <button class="flex mt-[40px] bg-gray-100 text-black rounded-[50px] px-4 py-2 items-center">
+                                    Hire international talent
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
+                                    </svg>
+                                </button>
+                                <img class="mt-[50px] object-cover min-w-full" src="https://hiregotemplate.netlify.app/assets/images/service.png" alt="Service Image">
+                            </div>
+                        </div>
+                        <div class="w-full h-[740px]">
+                            <div class="w-full h-[296px] bg-[#3A5C45] rounded-[50px]">
+                                <div class="p-8">
+                                    <h1 class="text-[25px] font-semibold text-white">Hire contractors</h1>
+                                    <p class="mt-7 text-gray-300">Generate, edit, and sign compliant contracts in minutes and access management tools to streamline paperwork, onboarding, and payments.</p>
+                                    <button class="flex mt-[40px] bg-gray-100 text-black rounded-[50px] px-4 py-2 items-center">
+                                        Hire Contrators
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="w-full h-auto bg-[#B1D8FC] rounded-[50px] mt-6">
+                                <div class="p-8">
+                                    <div class="py-[80px]">
+                                    <h1 class=" text-[25px] font-semibold text-black">Convert contractors to employees</h1>
+                                    <p class="mt-7 text-black">Assess global worker misclassification risks and compliantly convert contractors to full-timers, all under one platform.</p>
+                                    <button class="flex mt-[40px] bg-gray-100 text-black rounded-[50px] px-4 py-2 items-center">
+                                       Convert Contrators
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mt-11">
+
+                    <div class="grid sm:grid-cols-1 lg:grid-cols-3 p-6 items-center justify-center mb-5">
+                        <div class="w-full text-center">
+                            <p class="text-[50px] font-semibold text-[#B0D9FF]">5000+</p>
+                            <p class="text-white">Loved by 5,000+ Team Members</p>
+                        </div>
+                        <div class="w-full text-center">
+                            <p class="text-[50px] font-semibold text-[#B0D9FF]">25000+</p>
+                            <p class="text-white">Trusted by 25,000+ customers</p>
+                        </div>
+                        <div class="w-full text-center">
+                            <p class="text-[50px] font-semibold text-[#B0D9FF]">48 hrs</p>
+                            <p class="text-white">Onboard talent in as little as 48 hours</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    
+
+        <section>
+            <div class="container mx-auto">
+                <div class="flex items-center justify-center ">
+                    <h1 class="mt-[40px] text-center text-black font-semibold text-[35px] h-full w-[300px]">
+                        Take your business
+                        to the next level.
+                    </h1>
+                </div>
+                <div class="mt-[50px] grid sm:grid-cols-1 lg:grid-cols-2 gap-[50px]">
+                    <div class="w-full h-auto order-2 lg:order-1 sm:mb-5">
+                        <div class="lg:py-[150px] px-[30px]">
+                            <h1 class="text-[25px] font-semibold text-orange-400">
+                                Culture and performance. It's up and up.
+                            </h1>
+                            <p class="mt-7 text-black">Develop feedback loops, set KPIs and design custom performance reviews. Quickly build a positive performance culture for your business — where everyone is aiming for the same goals.</p>
+                            <button class="flex mt-[40px] bg-gray-100 text-black rounded-[50px] px-4 py-2 items-center">
+                                Performance Management
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="w-full h-auto order-1 lg:order-2">
+                        <div class="order-first md:order-none basis-1/2">
+                            <img class="object-cover w-full" src="https://hiregotemplate.netlify.app/assets/images/service_2.png" alt="Service Image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-[50px] grid sm:grid-cols-1 lg:grid-cols-2 gap-[50px]">
+                    <div class="w-full h-auto order-2 lg:order-1">
+                        <div class="order-first md:order-none basis-1/2">
+                            <img class="object-cover w-full" src="https://hiregotemplate.netlify.app/assets/images/service_3.png" alt="Service Image">
+                        </div>
+                    </div>
+                    <div class="w-full h-auto order-2 lg:order-1">
+                        <div class="lg:py-[150px] px-[30px]">
+                            <h1 class="text-[25px] font-semibold text-purple-700">
+                                It's payroll software.
+                                Just faster.
+                            </h1>
+                            <p class="mt-7 text-black">Save your time, pay your people with automated payroll. Enjoy the benefits of Real Time Information (RTI) and take care of workforce planning - all in one simple place.</p>
+                            <button class="flex mt-[40px] bg-gray-100 text-black rounded-[50px] px-4 py-2 items-center">
+                                Payroll Features
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="w-full h-auto rounded-[50px] bg-black mt-14">
+                <div class="flex items-center justify-center ">
+                    <h1 class="mt-[40px] text-center text-white font-semibold text-[35px] h-full w-[450px]">
+                        We help teams grow faster
+                        across borders.
+                    </h1>
+                </div>
+                <div class="w-full p-[120px]">
+                    <div class="grid sm:grid-cols-1 lg:grid-cols-2 w-full">
+                        <div class="order-2 sm:order-1 lg:rounded-l-[25px] bg-[#B1D8FC]">
+                            <div class="p-[90px]">
+                                <img src="https://hiregotemplate.netlify.app/assets/images/slider_text_img.png" alt="">
+                                <h1 class="mt-8 text-xl font-semibold">
+                                    “Saving time and simplifying the process and
+                                    saving money. It
+                                    was the triple trifecta.”
+                                </h1>
+                                <p class="mt-8">Ally Fekaiki, CEO - Soho, New York</p>
+                                
+                                <button class="flex mt-[40px] border-black border-[1px] bg-gray-100 text-black rounded-[50px] px-4 py-2 items-center">
+                                    Learn More
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="lg:rounded-r-[25px] overflow-auto order-1 sm:order-2 ">
+                            <img class="w-full" src="https://hiregotemplate.netlify.app/assets/images/slider.png" alt="">
+                        </div>
+                                               
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container mx-auto mt-[40px]">
+                <div class="flex items-center justify-center ">
+                    <h1 class="mt-[40px] text-center text-black font-semibold text-[35px] h-full w-[400px]">
+                        Get started with HireGo
+                        in three easy steps.
+                    </h1>
+                </div>
+
+                <div class="grid sm:grid-cols-1 lg:grid-cols-2 p-4 gap-6  mt-5">
+                    <div><img class="object-cover w-full" src="https://hiregotemplate.netlify.app/assets/images/get_started.png" alt="Getting started"></div>
+                    <div class="flex flex-col gap-6 h-[628px]">
+                        <div class="bg-gray-100 h-[30%] rounded-md">
+                            <div class="flex p-6 gap-4 items-start">
+                                <h1 class="bg-purple-800 text-white rounded-full px-4 py-2">1</h1>
+                                <div>
+                                    <h1 class="text-2xl font-semibold">Book a call</h1>
+                                    <p class="mt-6">Book a call with our global workforce consultants. We'll set you up with a free account ready to suit your team's needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-100 h-[30%] rounded-md">
+                            <div class="flex p-6 gap-4 items-start">
+                                <h1 class="bg-purple-800 text-white rounded-full px-4 py-2">2</h1>
+                                <div>
+                                    <h1 class="text-2xl font-semibold">BAdd your people</h1>
+                                    <p class="mt-6">From new hires to your existing workforce, onboard effortlessly with our self-serve platform.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-100 h-auto lg:h-[30%] rounded-md">
+                            <div class="flex p-6 gap-4 items-start">
+                                <h1 class="bg-purple-800 text-white rounded-full px-4 py-2">3</h1>
+                                <div>
+                                    <h1 class="text-2xl font-semibold">Dedicated onboarding</h1>
+                                    <p class="mt-6">From navigating local laws to support for your team members, our dedicated team will help you get set up seamlessly.</p>
+                                    <button class="flex mt-[10px] bg-gray-100 border-[1px] border-black text-black rounded-[50px] px-4 py-2 items-center">
+                                       Start Now
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -125,8 +374,132 @@
 
     </main>
 
-    <footer>
-
+    <footer class="bg-slate-800 py-14">
+        <div class="container px-5 mx-auto text-white md:px-0">
+            <!-- top footer -->
+            <div class="flex items-center justify-center ">
+                <h1 class="text-center text-white font-semibold text-[35px] h-full w-[500px]">
+                    Work easy <br>
+                    Grow further with HireGo
+                </h1>
+            </div>
+            <div class="flex items-center">
+                <button type="button" class="flex items-center px-8 py-4 mx-auto my-10 text-black bg-white rounded-full md:my-16 btn_flex md:px-12">
+                    Request a demo
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4 ml-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+                    </svg>
+                </button>
+            </div>
+            <hr class="divider">
+            <!-- middle footer -->
+            <div class="flex flex-col gap-10 py-10 md:py-16 md:flex-row">
+                <div class="flex-1">
+                    <h2 class="mb-8 text-3xl font-semibold">HireGo</h2>
+                    <div class="flex gap-3">
+                        <div class="p-2 bg-gray-700 rounded-full">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="fill-current stroke-current size-6" viewBox="0 0 50 50">
+                                    <path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="p-2 bg-gray-700 rounded-full">
+                            <a href="https://www.linkedin.com/in/web3-hasan/">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="fill-current stroke-current size-6" viewBox="0 0 50 50">
+                                    <path d="M 8 3.0117188 C 6.3126093 3.0117188 4.8354789 3.4916328 3.7539062 4.3652344 C 2.6723337 5.238836 2.0117188 6.533218 2.0117188 7.9472656 C 2.0117188 10.690836 4.4687078 12.814467 7.7167969 12.941406 A 0.98809878 0.98809878 0 0 0 8 12.988281 C 9.753566 12.988281 11.246191 12.474267 12.3125 11.564453 C 13.378809 10.654639 13.988281 9.3429353 13.988281 7.9472656 A 0.98809878 0.98809878 0 0 0 13.986328 7.8925781 C 13.832307 5.1316834 11.374781 3.0117187 8 3.0117188 z M 8 4.9882812 C 10.60907 4.9882812 11.895883 6.2693448 12.005859 7.9726562 C 11.998759 8.8049335 11.676559 9.5118991 11.03125 10.0625 C 10.378809 10.619186 9.371434 11.011719 8 11.011719 C 5.3980542 11.011719 3.9882813 9.5991704 3.9882812 7.9472656 C 3.9882812 7.1213132 4.3276663 6.4422421 4.9960938 5.9023438 C 5.6645211 5.3624454 6.6873907 4.9882813 8 4.9882812 z M 3 15 A 1.0001 1.0001 0 0 0 2 16 L 2 45 A 1.0001 1.0001 0 0 0 3 46 L 13 46 A 1.0001 1.0001 0 0 0 14 45 L 14 35.664062 L 14 16 A 1.0001 1.0001 0 0 0 13 15 L 3 15 z M 18 15 A 1.0001 1.0001 0 0 0 17 16 L 17 45 A 1.0001 1.0001 0 0 0 18 46 L 28 46 A 1.0001 1.0001 0 0 0 29 45 L 29 29 L 29 28.75 L 29 28.5 C 29 26.555577 30.555577 25 32.5 25 C 34.444423 25 36 26.555577 36 28.5 L 36 45 A 1.0001 1.0001 0 0 0 37 46 L 47 46 A 1.0001 1.0001 0 0 0 48 45 L 48 28 C 48 23.873476 46.787888 20.604454 44.744141 18.375 C 42.700394 16.145546 39.849212 15 36.787109 15 C 32.882872 15 30.521631 16.426076 29 17.601562 L 29 16 A 1.0001 1.0001 0 0 0 28 15 L 18 15 z M 4 17 L 12 17 L 12 35.664062 L 12 44 L 4 44 L 4 17 z M 19 17 L 27 17 L 27 19.638672 A 1.0001 1.0001 0 0 0 28.744141 20.306641 C 28.744141 20.306641 31.709841 17 36.787109 17 C 39.360007 17 41.615528 17.922268 43.269531 19.726562 C 44.923534 21.530858 46 24.261524 46 28 L 46 44 L 38 44 L 38 28.5 A 1.0001 1.0001 0 0 0 37.916016 28.089844 C 37.694061 25.26411 35.38033 23 32.5 23 C 29.474423 23 27 25.474423 27 28.5 L 27 28.75 L 27 29 L 27 44 L 19 44 L 19 17 z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="p-2 bg-gray-700 rounded-full">
+                            <a href="https://www.facebook.com/gh.gimhaa">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="fill-current stroke-current size-6" viewBox="0 0 24 24">
+                                    <path d="M16.403,9H14V7c0-1.032,0.084-1.682,1.563-1.682h0.868c0.552,0,1-0.448,1-1V3.064c0-0.523-0.401-0.97-0.923-1.005 C15.904,2.018,15.299,1.999,14.693,2C11.98,2,10,3.657,10,6.699V9H8c-0.552,0-1,0.448-1,1v2c0,0.552,0.448,1,1,1l2-0.001V21 c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1v-8.003l2.174-0.001c0.508,0,0.935-0.381,0.993-0.886l0.229-1.996 C17.465,9.521,17.001,9,16.403,9z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="p-2 bg-gray-700 rounded-full">
+                            <a href="https://www.instagram.com/hasan_kk420/?hl=en">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="fill-current stroke-current size-6" viewBox="0 0 50 50">
+                                    <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <h2 class="footer_heading">How it works</h2>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#">Hire Employees</a></li>
+                        <li><a href="#">Hire Contractors</a></li>
+                        <li><a href="#">Run Global Payroll</a></li>
+                        <li><a href="#">App Store</a></li>
+                        <li><a href="#">Open API</a></li>
+                    </ul>
+                </div>
+                <div class="flex-1">
+                    <h2 class="footer_heading">Solutions</h2>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#">Compliance</a></li>
+                        <li><a href="#">Payments</a></li>
+                        <li><a href="#">For Finance Teams</a></li>
+                        <li><a href="#">For Legal Teams</a></li>
+                        <li><a href="#">For Hiring Managers</a></li>
+                        <li><a href="#">Startup</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                    </ul>
+                </div>
+                <div class="flex-1">
+                    <h2 class="footer_heading">Resources</h2>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support hub</a></li>
+                        <li><a href="#">Global Hiring Guide</a></li>
+                        <li><a href="#">Partner Program</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Glossary</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Service Status</a></li>
+                        <li><a href="#">Worker Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex items-center gap-3 pb-5 md:pb-10">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"></path>
+                </svg>
+                <p>English</p>
+            </div>
+            <hr class="divider">
+            <!-- bottom footer -->
+            <div class="lg:flex justify-between">
+                <p class="mb-5 md:mb-0">© Copyright 2024. H A S A N</p>
+                <ul class="lg:flex gap-6 text-gray-400">
+                    <li class="sm:mt-4">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="sm:mt-4">
+                        <a href="#">Terms of Service</a>
+                    </li>
+                    <li class="sm:mt-4">
+                        <a href="#">Whistleblower Policy</a>
+                    </li>
+                    <li class="sm:mt-4">
+                        <a href="#">Cookie policy</a>
+                    </li>
+                    <li class="sm:mt-4">
+                        <a href="#">Cookie Settings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
     
     <script>
@@ -151,3 +524,6 @@
 
 </body>
 </html>
+
+
+
