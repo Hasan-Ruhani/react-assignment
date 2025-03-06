@@ -1,45 +1,63 @@
-import { FaSearch, FaCog, FaBell } from "react-icons/fa";
-import { FiMenu } from "react-icons/fi";
-import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import {
+  FaChartPie,
+  FaExchangeAlt,
+  FaUser,
+  FaBriefcase,
+  FaCog,
+  FaWallet,
+} from "react-icons/fa";
 
-export default function Header({ toggleSidebar }) {
+export default function Sidebar({ closeSidebar }) {
+  const location = useLocation(); // Get the current path
+
+  // Sidebar Menu Items
+  const menuItems = [
+    { path: "/dashboard", label: "Dashboard", icon: <FaChartPie /> },
+    { path: "/transactions", label: "Transactions", icon: <FaExchangeAlt /> },
+    { path: "/accounts", label: "Accounts", icon: <FaUser /> },
+    { path: "/investments", label: "Investments", icon: <FaBriefcase /> },
+    { path: "/settings", label: "Settings", icon: <FaCog /> },
+  ];
+
   return (
-    <div className="bg-white shadow-md p-4 flex items-center justify-between w-full">
-      {/* Left Section (Logo + Mobile Menu) */}
-      <div className="flex items-center space-x-4">
-        {/* Mobile Menu Button */}
-        <button onClick={toggleSidebar} className="lg:hidden text-gray-600 text-2xl">
-          <FiMenu />
-        </button>
-        {/* Page Title */}
-        <h2 className="text-lg lg:text-2xl font-semibold text-gray-800">Overview</h2>
+    <div className="w-64 h-screen bg-white shadow-md p-5">
+      {/* Logo with Icon */}
+      <div className="flex items-center space-x-2 mb-6">
+        <FaWallet className="text-blue-600 text-3xl" /> {/* Icon */}
+        <h1 className="text-2xl font-bold text-blue-600">BankDash.</h1>
       </div>
 
-      {/* Middle Section (Search Bar - Only visible on larger screens) */}
-      <div className="hidden md:flex bg-gray-100 px-4 py-2 rounded-full w-72 items-center">
-        <FaSearch className="text-gray-400 mr-2" />
-        <input
-          type="text"
-          placeholder="Search for something"
-          className="bg-transparent outline-none text-sm w-full"
-        />
-      </div>
-
-      {/* Right Section (Icons + Profile) */}
-      <div className="flex items-center space-x-4">
-        <button className="hidden md:block text-gray-500 hover:text-blue-500 text-xl">
-          <FaCog />
-        </button>
-        <button className="hidden md:block text-red-500 hover:text-red-600 text-xl">
-          <FaBell />
-        </button>
-        {/* Profile Image */}
-        <img
-          src="https://randomuser.me/api/portraits/women/44.jpg"
-          alt="User"
-          className="w-10 h-10 rounded-full object-cover"
-        />
-      </div>
+      {/* Navigation */}
+      <nav>
+        <ul className="space-y-2">
+          {menuItems.map((item) => {
+            const isActive = location.pathname === item.path;
+            return (
+              <li key={item.path}>
+                <Link
+                  to={item.path}
+                  onClick={closeSidebar}
+                  className={`flex items-center px-4 py-2 rounded-md transition-all ${
+                    isActive
+                      ? "bg-blue-100 text-blue-600 font-semibold"
+                      : "text-gray-500 hover:text-blue-500"
+                  }`}
+                >
+                  <span
+                    className={`mr-2 text-lg ${
+                      isActive ? "text-blue-600" : "text-gray-400"
+                    }`}
+                  >
+                    {item.icon}
+                  </span>
+                  {item.label}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
     </div>
   );
 }
