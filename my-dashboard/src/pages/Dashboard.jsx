@@ -209,7 +209,7 @@ export default function Dashboard() {
 
         {/* Expense Statistics (Pie Chart) */}
         <div className="bg-white p-5 rounded-lg shadow-md">
-          <h3 className="text-lg font-semibold mb-4">Expense Statistics</h3>
+          <h3 className="text-lg font-semibold mb-4">Expense</h3>
           <Pie data={pieData} />
         </div>
       </div>

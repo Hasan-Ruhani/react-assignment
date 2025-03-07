@@ -32,7 +32,7 @@ export default function App() {
           <Header toggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
           <div className="p-6">
             <Routes>
-              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/" element={<Dashboard />} />
             </Routes>
           </div>
         </div>

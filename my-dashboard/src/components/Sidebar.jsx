@@ -13,7 +13,7 @@ export default function Sidebar({ closeSidebar }) {
 
   // Sidebar Menu Items
   const menuItems = [
-    { path: "/dashboard", label: "Dashboard", icon: <FaChartPie /> },
+    { path: "/", label: "Dashboard", icon: <FaChartPie /> },
     { path: "/transactions", label: "Transactions", icon: <FaExchangeAlt /> },
     { path: "/accounts", label: "Accounts", icon: <FaUser /> },
     { path: "/investments", label: "Investments", icon: <FaBriefcase /> },
