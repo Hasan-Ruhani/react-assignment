@@ -86,7 +86,7 @@ export default function Dashboard() {
 
 
     // Fetch Weekly Activity
-    fetch("http://inertia-pos.manirul.xyz/api/recent-transactions-list")
+    fetch("https://inertia-pos.manirul.xyz/api/recent-transactions-list")
       .then((res) => res.json())
       .then((data) => {
         if (data.status === "Success") {
