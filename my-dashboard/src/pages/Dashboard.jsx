@@ -84,7 +84,6 @@ export default function Dashboard() {
 
   useEffect(() => {
 
-
     // Fetch Weekly Activity
     fetch("https://inertia-pos.manirul.xyz/api/recent-transactions-list")
       .then((res) => res.json())
