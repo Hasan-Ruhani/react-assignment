@@ -146,7 +146,6 @@ export default function Dashboard() {
               <div className="absolute bg-gray-500/40 w-8 h-8 rounded-full translate-x-4"></div>
            </div>
 
-
           {/* Foreground Content */}
           <div className="p-6">
             <div className="flex justify-between items-center">
