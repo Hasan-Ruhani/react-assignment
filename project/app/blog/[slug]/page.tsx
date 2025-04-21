@@ -1,8 +1,4 @@
-"use client";
-
 import React from "react";
-import { useParams } from "next/navigation";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { blogPosts } from "@/lib/data";
@@ -11,9 +7,15 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { format } from "date-fns";
 
-export default function BlogPost() {
-  const { slug } = useParams();
-  const post = blogPosts.find((post) => post.id === slug);
+// Generate static params for all blog posts
+export async function generateStaticParams() {
+  return blogPosts.map((post) => ({
+    slug: post.id,
+  }));
+}
+
+export default function BlogPost({ params }: { params: { slug: string } }) {
+  const post = blogPosts.find((post) => post.id === params.slug);
 
   if (!post) {
     return (
@@ -43,11 +45,7 @@ export default function BlogPost() {
                 Back to Blog
               </Link>
             </Button>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
+            <div>
               <div className="flex flex-wrap gap-2 mb-4">
                 {post.categories.map((category) => (
                   <Badge key={category} variant="secondary">
@@ -63,7 +61,7 @@ export default function BlogPost() {
                 <span>•</span>
                 <span>{format(new Date(post.date), 'MMMM dd, yyyy')}</span>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
