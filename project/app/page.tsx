@@ -6,6 +6,7 @@ import Testimonials from "@/components/home/Testimonials";
 import StatsSection from "@/components/home/StatsSection";
 import CTASection from "@/components/home/CTASection";
 
+
 export default function Home() {
   return (
     <>
